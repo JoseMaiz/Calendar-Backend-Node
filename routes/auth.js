@@ -29,7 +29,7 @@ router.post(
     '/',
     [ //middleware
         check('email','El email es obligatorio').isEmail(),
-        check('password','El password dene ser de 6 caracteres').isLength({min: 6}),
+        check('password','El password debe ser de 6 caracteres').isLength({min: 6}),
         validarCampos,
     ], 
     userLogin);
